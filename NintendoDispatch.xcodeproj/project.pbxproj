@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,14 @@
 		96584B7A23919DC500AC9371 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96584B7923919DC500AC9371 /* Assets.xcassets */; };
 		96584B7D23919DC500AC9371 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96584B7C23919DC500AC9371 /* Preview Assets.xcassets */; };
 		96584B8023919DC500AC9371 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96584B7E23919DC500AC9371 /* LaunchScreen.storyboard */; };
+		96584B892391B3FF00AC9371 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96584B882391B3FF00AC9371 /* Episode.swift */; };
+		96584B8C2391B7B300AC9371 /* episodeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 96584B8B2391B7B300AC9371 /* episodeData.json */; };
+		96584B912391BBE200AC9371 /* EpisodeRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96584B902391BBE200AC9371 /* EpisodeRowView.swift */; };
+		96584B932391C1A700AC9371 /* EpisodeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96584B922391C1A700AC9371 /* EpisodeList.swift */; };
+		96E4F9152391C80400FF4EEA /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E4F9142391C80400FF4EEA /* Data.swift */; };
+		96E4F9172391D24C00FF4EEA /* EpisodeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E4F9162391D24C00FF4EEA /* EpisodeDetail.swift */; };
+		96E4F9192392CF3900FF4EEA /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E4F9182392CF3900FF4EEA /* CircleImage.swift */; };
+		96E4F91C2392D1D600FF4EEA /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = 96E4F91B2392D1D600FF4EEA /* URLImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +34,13 @@
 		96584B7C23919DC500AC9371 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		96584B7F23919DC500AC9371 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96584B8123919DC500AC9371 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96584B882391B3FF00AC9371 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
+		96584B8B2391B7B300AC9371 /* episodeData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = episodeData.json; sourceTree = "<group>"; };
+		96584B902391BBE200AC9371 /* EpisodeRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeRowView.swift; sourceTree = "<group>"; };
+		96584B922391C1A700AC9371 /* EpisodeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeList.swift; sourceTree = "<group>"; };
+		96E4F9142391C80400FF4EEA /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		96E4F9162391D24C00FF4EEA /* EpisodeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeDetail.swift; sourceTree = "<group>"; };
+		96E4F9182392CF3900FF4EEA /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96E4F91C2392D1D600FF4EEA /* URLImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +74,9 @@
 		96584B6F23919DC500AC9371 /* NintendoDispatch */ = {
 			isa = PBXGroup;
 			children = (
+				96584B8D2391B87D00AC9371 /* Views */,
+				96584B8A2391B79100AC9371 /* Resources */,
+				96584B872391B3E700AC9371 /* Models */,
 				96584B7023919DC500AC9371 /* AppDelegate.swift */,
 				96584B7223919DC500AC9371 /* SceneDelegate.swift */,
 				96584B7723919DC500AC9371 /* ContentView.swift */,
@@ -78,6 +97,34 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		96584B872391B3E700AC9371 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				96584B882391B3FF00AC9371 /* Episode.swift */,
+				96E4F9142391C80400FF4EEA /* Data.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		96584B8A2391B79100AC9371 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				96584B8B2391B7B300AC9371 /* episodeData.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		96584B8D2391B87D00AC9371 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				96584B902391BBE200AC9371 /* EpisodeRowView.swift */,
+				96584B922391C1A700AC9371 /* EpisodeList.swift */,
+				96E4F9162391D24C00FF4EEA /* EpisodeDetail.swift */,
+				96E4F9182392CF3900FF4EEA /* CircleImage.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -94,6 +141,9 @@
 			dependencies = (
 			);
 			name = NintendoDispatch;
+			packageProductDependencies = (
+				96E4F91B2392D1D600FF4EEA /* URLImage */,
+			);
 			productName = NintendoDispatch;
 			productReference = 96584B6D23919DC500AC9371 /* NintendoDispatch.app */;
 			productType = "com.apple.product-type.application";
@@ -122,6 +172,9 @@
 				Base,
 			);
 			mainGroup = 96584B6423919DC500AC9371;
+			packageReferences = (
+				96E4F91A2392D1D600FF4EEA /* XCRemoteSwiftPackageReference "url-image" */,
+			);
 			productRefGroup = 96584B6E23919DC500AC9371 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -136,6 +189,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96584B8C2391B7B300AC9371 /* episodeData.json in Resources */,
 				96584B8023919DC500AC9371 /* LaunchScreen.storyboard in Resources */,
 				96584B7D23919DC500AC9371 /* Preview Assets.xcassets in Resources */,
 				96584B7A23919DC500AC9371 /* Assets.xcassets in Resources */,
@@ -152,7 +206,13 @@
 				96584B7123919DC500AC9371 /* AppDelegate.swift in Sources */,
 				96584B7323919DC500AC9371 /* SceneDelegate.swift in Sources */,
 				96584B7823919DC500AC9371 /* ContentView.swift in Sources */,
+				96584B932391C1A700AC9371 /* EpisodeList.swift in Sources */,
+				96584B892391B3FF00AC9371 /* Episode.swift in Sources */,
 				96584B7623919DC500AC9371 /* NintendoDispatch.xcdatamodeld in Sources */,
+				96E4F9172391D24C00FF4EEA /* EpisodeDetail.swift in Sources */,
+				96584B912391BBE200AC9371 /* EpisodeRowView.swift in Sources */,
+				96E4F9152391C80400FF4EEA /* Data.swift in Sources */,
+				96E4F9192392CF3900FF4EEA /* CircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +406,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		96E4F91A2392D1D600FF4EEA /* XCRemoteSwiftPackageReference "url-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.9;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		96E4F91B2392D1D600FF4EEA /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 96E4F91A2392D1D600FF4EEA /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		96584B7423919DC500AC9371 /* NintendoDispatch.xcdatamodeld */ = {
