@@ -14,10 +14,8 @@ class PlayerUIView: UIView {
     var url: URL?
     private let playerLayer = AVPlayerLayer()
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        
-      let player = AVPlayer()
+    init(player: AVPlayer) {
+        super.init(frame: .zero)
       
       playerLayer.player = player
       layer.addSublayer(playerLayer)

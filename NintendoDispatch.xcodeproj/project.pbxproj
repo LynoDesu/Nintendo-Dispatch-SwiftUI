@@ -24,6 +24,8 @@
 		96E4F91C2392D1D600FF4EEA /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = 96E4F91B2392D1D600FF4EEA /* URLImage */; };
 		96E4F920239311A500FF4EEA /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E4F91F239311A500FF4EEA /* PlayerView.swift */; };
 		96E4F9222393120F00FF4EEA /* PlayerUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E4F9212393120F00FF4EEA /* PlayerUIView.swift */; };
+		96E4F924239321B500FF4EEA /* PlayerContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E4F923239321B500FF4EEA /* PlayerContainerView.swift */; };
+		96E4F9262393235B00FF4EEA /* PlayerControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E4F9252393235B00FF4EEA /* PlayerControlsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,8 @@
 		96E4F9182392CF3900FF4EEA /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		96E4F91F239311A500FF4EEA /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		96E4F9212393120F00FF4EEA /* PlayerUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerUIView.swift; sourceTree = "<group>"; };
+		96E4F923239321B500FF4EEA /* PlayerContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerContainerView.swift; sourceTree = "<group>"; };
+		96E4F9252393235B00FF4EEA /* PlayerControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerControlsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +131,8 @@
 				96E4F9162391D24C00FF4EEA /* EpisodeDetail.swift */,
 				96E4F9182392CF3900FF4EEA /* CircleImage.swift */,
 				96E4F9212393120F00FF4EEA /* PlayerUIView.swift */,
+				96E4F923239321B500FF4EEA /* PlayerContainerView.swift */,
+				96E4F9252393235B00FF4EEA /* PlayerControlsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -221,10 +227,12 @@
 				96584B7323919DC500AC9371 /* SceneDelegate.swift in Sources */,
 				96584B7823919DC500AC9371 /* ContentView.swift in Sources */,
 				96E4F920239311A500FF4EEA /* PlayerView.swift in Sources */,
+				96E4F924239321B500FF4EEA /* PlayerContainerView.swift in Sources */,
 				96584B932391C1A700AC9371 /* EpisodeList.swift in Sources */,
 				96584B892391B3FF00AC9371 /* Episode.swift in Sources */,
 				96584B7623919DC500AC9371 /* NintendoDispatch.xcdatamodeld in Sources */,
 				96E4F9172391D24C00FF4EEA /* EpisodeDetail.swift in Sources */,
+				96E4F9262393235B00FF4EEA /* PlayerControlsView.swift in Sources */,
 				96584B912391BBE200AC9371 /* EpisodeRowView.swift in Sources */,
 				96E4F9152391C80400FF4EEA /* Data.swift in Sources */,
 				96E4F9192392CF3900FF4EEA /* CircleImage.swift in Sources */,

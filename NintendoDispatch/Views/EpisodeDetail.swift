@@ -39,10 +39,10 @@ struct EpisodeDetail: View {
                 .font(.body)
                 .padding(EdgeInsets.init(top: 20, leading: 0, bottom: 0, trailing: 0))
                 
-            Button(action: {
-            }){Text("Play episode")}
-            PlayerView(url: URL(string: self.episode.attachments[0].url)!)
+            PlayerContainerView(url: URL(string: self.episode.attachments[0].url)!)
+            
             Spacer()
+            
             }
             .padding()
     }
