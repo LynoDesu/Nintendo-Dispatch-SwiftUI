@@ -17,8 +17,9 @@ struct EpisodeDetail: View {
         let mySubstring = episode.id[..<index]
         let headerUrl = "https://assets.fireside.fm/file/fireside-images/podcasts/images/b/bd6e0af5-b1d6-4783-9506-d534cfbae69e/episodes/\(mySubstring)/\(episode.id)/header.jpg"
         
-        return VStack(alignment: .center, spacing: 10) {
+        return VStack(alignment: .center, spacing: 20) {
             CircleImage(url: headerUrl)
+                .offset(x: 0, y: -20)
             
             Text(episode.title)
                 .font(.title)
@@ -31,6 +32,7 @@ struct EpisodeDetail: View {
                 Text(episode.datePublished)
                     .font(.subheadline)
             }
+            .padding()
             
             Text(episode.summary)
                 .font(.body)
