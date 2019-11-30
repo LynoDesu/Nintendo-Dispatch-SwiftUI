@@ -12,6 +12,7 @@ import URLImage
 
 struct EpisodeDetail: View {
     var episode: Item
+    @State var playEpisode = false
     var body: some View {
         let index = episode.id.index(episode.id.startIndex, offsetBy: 1)
         let mySubstring = episode.id[..<index]
@@ -39,12 +40,9 @@ struct EpisodeDetail: View {
                 .padding(EdgeInsets.init(top: 20, leading: 0, bottom: 0, trailing: 0))
                 
             Button(action: {
-                let url = URL(string: self.episode.attachments[0].url)!
-                let player = AVPlayer(url: url)
-                player.play()
             }){Text("Play episode")}
-            
-                Spacer()
+            PlayerView(url: URL(string: self.episode.attachments[0].url)!)
+            Spacer()
             }
             .padding()
     }
