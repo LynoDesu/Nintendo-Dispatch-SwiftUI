@@ -13,6 +13,7 @@ import URLImage
 struct EpisodeDetail: View {
     var episode: Item
     @State var playEpisode = false
+    
     var body: some View {
         let index = episode.id.index(episode.id.startIndex, offsetBy: 1)
         let mySubstring = episode.id[..<index]

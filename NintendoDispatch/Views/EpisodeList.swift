@@ -14,7 +14,7 @@ struct EpisodeList: View {
                 VStack{
                     Text("Episodes")
                     .font(.title)
-                    .foregroundColor(Color.init(.red))
+                        .foregroundColor(Color.init(.blue))
                     List(episodeData.items) { podcast in
                         NavigationLink(destination: EpisodeDetail(episode: podcast)) {
                             EpisodeRowView(episode: podcast)

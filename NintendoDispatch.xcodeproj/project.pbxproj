@@ -18,6 +18,7 @@
 		96584B8C2391B7B300AC9371 /* episodeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 96584B8B2391B7B300AC9371 /* episodeData.json */; };
 		96584B912391BBE200AC9371 /* EpisodeRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96584B902391BBE200AC9371 /* EpisodeRowView.swift */; };
 		96584B932391C1A700AC9371 /* EpisodeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96584B922391C1A700AC9371 /* EpisodeList.swift */; };
+		96DFB8542398305B00AA623B /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DFB8532398305B00AA623B /* ActivityIndicator.swift */; };
 		96E4F9152391C80400FF4EEA /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E4F9142391C80400FF4EEA /* Data.swift */; };
 		96E4F9172391D24C00FF4EEA /* EpisodeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E4F9162391D24C00FF4EEA /* EpisodeDetail.swift */; };
 		96E4F9192392CF3900FF4EEA /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E4F9182392CF3900FF4EEA /* CircleImage.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9642AD0B23A4700500D1078A /* NintendoDispatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NintendoDispatch.entitlements; sourceTree = "<group>"; };
 		96584B6D23919DC500AC9371 /* NintendoDispatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NintendoDispatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96584B7023919DC500AC9371 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96584B7223919DC500AC9371 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +44,7 @@
 		96584B8B2391B7B300AC9371 /* episodeData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = episodeData.json; sourceTree = "<group>"; };
 		96584B902391BBE200AC9371 /* EpisodeRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeRowView.swift; sourceTree = "<group>"; };
 		96584B922391C1A700AC9371 /* EpisodeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeList.swift; sourceTree = "<group>"; };
+		96DFB8532398305B00AA623B /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		96E4F9142391C80400FF4EEA /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		96E4F9162391D24C00FF4EEA /* EpisodeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeDetail.swift; sourceTree = "<group>"; };
 		96E4F9182392CF3900FF4EEA /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
@@ -82,6 +85,7 @@
 		96584B6F23919DC500AC9371 /* NintendoDispatch */ = {
 			isa = PBXGroup;
 			children = (
+				9642AD0B23A4700500D1078A /* NintendoDispatch.entitlements */,
 				96E4F91E2393118A00FF4EEA /* Controls */,
 				96584B8D2391B87D00AC9371 /* Views */,
 				96584B8A2391B79100AC9371 /* Resources */,
@@ -133,6 +137,7 @@
 				96E4F9212393120F00FF4EEA /* PlayerUIView.swift */,
 				96E4F923239321B500FF4EEA /* PlayerContainerView.swift */,
 				96E4F9252393235B00FF4EEA /* PlayerControlsView.swift */,
+				96DFB8532398305B00AA623B /* ActivityIndicator.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -224,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96584B7123919DC500AC9371 /* AppDelegate.swift in Sources */,
+				96DFB8542398305B00AA623B /* ActivityIndicator.swift in Sources */,
 				96584B7323919DC500AC9371 /* SceneDelegate.swift in Sources */,
 				96584B7823919DC500AC9371 /* ContentView.swift in Sources */,
 				96E4F920239311A500FF4EEA /* PlayerView.swift in Sources */,
@@ -372,17 +378,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NintendoDispatch/NintendoDispatch.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"NintendoDispatch/Preview Content\"";
 				DEVELOPMENT_TEAM = TJ5KNLVF98;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = NintendoDispatch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = tech.limitbreak.NintendoDispatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -392,17 +402,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NintendoDispatch/NintendoDispatch.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"NintendoDispatch/Preview Content\"";
 				DEVELOPMENT_TEAM = TJ5KNLVF98;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = NintendoDispatch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = tech.limitbreak.NintendoDispatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
